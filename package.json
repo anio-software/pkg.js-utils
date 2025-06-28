@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "type": "module",
+  "name": "@anio-software/pkg.js-utils",
+  "version": "0.0.0",
+  "description": "Various utility functions.",
+  "author": "Anio Software <info@anio.software>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anio-software/pkg.js-utils.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@anio-software/enkore": "^0.0.104",
+    "@anio-software/enkore.core": "^0.11.2",
+    "@anio-software/enkore.target-js-none": "^0.0.259-canary-941f2f6c-1aa82524"
+  }
+}
