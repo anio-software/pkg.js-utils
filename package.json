@@ -12,7 +12,6 @@
   "license": "MIT",
   "devDependencies": {
     "@anio-software/enkore": "^0.0.173-canary-ed648e05-2067479c",
-    "@anio-software/enkore.core": "^0.11.22-canary-5564f69f-71984fdf",
-    "@anio-software/enkore.target-js-hybrid": "^0.0.301-canary-b002ffd4-ad2dfa07"
+    "@anio-software/enkore.core": "^0.11.22-canary-5564f69f-71984fdf"
   }
 }
