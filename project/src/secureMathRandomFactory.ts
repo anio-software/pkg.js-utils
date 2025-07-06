@@ -12,16 +12,12 @@ export function __implementation(
 	const context = createContext(contextOptions, 0)
 
 	try {
-		if ("crypto" in globalThis) {
-			const array = new Uint32Array(1)
+		const array = new Uint32Array(1)
 
-			globalThis.crypto.getRandomValues(array)
+		globalThis.crypto.getRandomValues(array)
 
-			// returns a value from 0..1 (excluding 1) like Math.random()
-			return array[0] / (0xFFFFFFFF + 1)
-		} else {
-			throw new Error(`'globalThis.crypto' is undefined.`)
-		}
+		// returns a value from 0..1 (excluding 1) like Math.random()
+		return array[0] / (0xFFFFFFFF + 1)
 	} catch (e) {
 		if (allowInsecureMathRandomAsFallback === true) {
 			context.log.warn(`Using insecure Math.random() as fallback.`)
