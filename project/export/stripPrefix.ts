@@ -1,7 +1,7 @@
-export function stripPrefix(str: string, prefix: string): string {
+export function stripPrefix(str: string, prefix: string): string|false {
 	// make sure `str` begins with `prefix`
 	if (!str.startsWith(prefix)) {
-		throw new Error(`Cannot strip '${prefix}' string '${str}' does not start with '${prefix}'.`)
+		return false
 	}
 
 	return str.slice(prefix.length)
