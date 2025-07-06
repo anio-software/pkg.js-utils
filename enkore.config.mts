@@ -1,12 +1,12 @@
 import {defineConfig} from "@anio-software/enkore"
-import {defineTargetOptions} from "@anio-software/enkore.target-js-none"
+import {defineTargetOptions} from "@anio-software/enkore.target-js-hybrid"
 import {
 	generateFactoryWithInstantiationFile
-} from "@anio-software/enkore.target-js-none/autogenerate"
+} from "@anio-software/enkore.target-js-hybrid/autogenerate"
 
 export const config: unknown = defineConfig({
 	target: {
-		name: "js-none",
+		name: "js-hybrid",
 		options: defineTargetOptions({
 			_disableRuntimeCodeInjection: true,
 
