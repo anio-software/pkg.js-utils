@@ -13,10 +13,9 @@ export function __implementation(
 
 	try {
 		if ("crypto" in globalThis) {
-			const crypto = globalThis.crypto
 			const array = new Uint32Array(1)
 
-			crypto.getRandomValues(array)
+			globalThis.crypto.getRandomValues(array)
 
 			// returns a value from 0..1 (excluding 1) like Math.random()
 			return array[0] / (0xFFFFFFFF + 1)
