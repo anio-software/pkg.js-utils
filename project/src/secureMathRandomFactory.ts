@@ -13,7 +13,7 @@ export function __implementation(
 
 	try {
 		if ("crypto" in globalThis) {
-			const crypto = (globalThis as any).crypto
+			const crypto = globalThis.crypto
 			const array = new Uint32Array(1)
 
 			crypto.getRandomValues(array)
