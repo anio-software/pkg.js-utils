@@ -9,7 +9,10 @@
         "verbatimModuleSyntax": true,
         "strict": true,
         "skipLibCheck": false,
-        "types": [],
+        "types": [
+            "@types/node",
+            "@types/web"
+        ],
         "lib": [
             "esnext"
         ],
@@ -17,6 +20,11 @@
         "module": "nodenext",
         "moduleResolution": "nodenext",
         "baseUrl": "../",
-        "rootDir": "../"
+        "rootDir": "../",
+        "plugins": [
+            {
+                "name": "css-modules-ts-plugin"
+            }
+        ]
     }
 }
