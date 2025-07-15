@@ -13,6 +13,6 @@
   "devDependencies": {
     "@anio-software/enkore": "^0.0.190",
     "@anio-software/enkore.core": "^0.13.1",
-    "@anio-software/enkore.target-js-hybrid-lite": "^0.0.402"
+    "@anio-software/enkore.target-js-hybrid-lite": "^0.0.404"
   }
 }
