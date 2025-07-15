@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "name": "@anio-software/pkg.js-utils",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Various utility functions.",
   "author": "Anio Software <info@anio.software>",
   "repository": {
