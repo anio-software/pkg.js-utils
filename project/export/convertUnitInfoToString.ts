@@ -5,6 +5,10 @@ export function convertUnitInfoToString(info: UnitInfo, nDigits?: number) {
 	const digits = isNumber(nDigits) ? nDigits : 2
 	const [value, unit, isPrecise] = info
 
+	if (isNaN(value)) {
+		return "N/A"
+	}
+
 	if (isPrecise) {
 		return `${value} ${unit}`
 	}
