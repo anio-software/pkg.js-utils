@@ -2,10 +2,7 @@ import {shuffleArrayInPlace} from "./shuffleArrayInPlace.ts"
 import {secureMathRandom} from "./secureMathRandom.ts"
 
 export function secureShuffleArrayInPlace<T extends any[]>(
-	array: T,
-	allowInsecureMathRandomAsFallback?: boolean
+	array: T
 ): T {
-	return shuffleArrayInPlace(array, () => {
-		return secureMathRandom(allowInsecureMathRandomAsFallback === true)
-	})
+	return shuffleArrayInPlace(array, secureMathRandom)
 }
